@@ -1,0 +1,76 @@
+@import url(https://fonts.bunny.net/css?family=aladin:400);
+
+:root {
+  --page-bg-clr: #401022;
+  --menu-bg-clr: rgba(255, 255, 255, 0.05);
+  --btn-bg-clr: #812b4a;
+  --card-bg-clr: #2b0a16;
+  --font-clr-primary: #f1d299;
+  --font-clr-subheading: #e0b46f;
+  --system:
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --aladin:
+    "Aladin", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  color: var(--font-clr-primary);
+  background-color: var(--page-bg-clr);
+  width: 95%;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  display: grid;
+  grid-template-rows: 1fr;
+  margin: auto;
+}
+
+.logo {
+  font-size: 3rem;
+  font-family: var(--aladin);
+  font-weight: 700;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+button {
+  background-color: inherit;
+  padding: 10px 30px;
+  color: var(--font-clr-primary);
+  border-radius: 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+button:hover {
+  background-color: var(--font-clr-primary);
+  color: var(--page-bg-clr);
+  border: none;
+}

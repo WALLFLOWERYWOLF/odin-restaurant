@@ -1,0 +1,55 @@
+.homepage-wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 100px;
+  background-color: var(--card-bg-clr);
+  border-radius: 10px;
+  gap: 50px;
+}
+
+.homepage-wrapper > img {
+  width: 400px;
+  height: 400px;
+}
+
+.action {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  gap: 20px;
+}
+
+.welcome {
+  font-family: var(--system);
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 4rem;
+}
+
+.subheader-welcome {
+  font-family: var(--system);
+  color: var(--font-clr-subheading);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+}
+
+#reservation {
+  background-color: var(--font-clr-subheading);
+  color: var(--card-bg-clr);
+  width: max-content;
+  border-radius: 0;
+}
+
+#reservation:hover {
+  background-color: var(--page-bg-clr);
+  color: var(--font-clr-primary);
+}
+
+button:active,
+#reservation:active {
+  background-color: black;
+  color: var(--font-clr-primary);
+}
