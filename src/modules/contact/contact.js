@@ -1,0 +1,45 @@
+import "./contact.css";
+
+export default function contact() {
+  const contactTitle = document.createElement("div");
+  contactTitle.classList.add("contact-title");
+  contactTitle.textContent = "CONTACT US";
+  const contactContainer = document.createElement("div");
+  contactContainer.classList.add("contact-container");
+  const callSection = document.createElement("div");
+  callSection.classList.add("call-section");
+  const emailSection = document.createElement("div");
+  emailSection.classList.add("email-section");
+  const addressSection = document.createElement("div");
+  addressSection.classList.add("address-section");
+  const callUs = document.createElement("div");
+  callUs.classList.add("call-us");
+  callUs.textContent = "CALL US";
+  const emailUs = document.createElement("div");
+  emailUs.classList.add("email-us");
+  emailUs.textContent = "EMAIL US";
+  const visitUs = document.createElement("div");
+  visitUs.classList.add("visit-us");
+  visitUs.textContent = "VISIT US";
+  const call = document.createElement("p");
+  call.classList.add("call");
+  call.textContent = "+91 9334159051";
+  const email = document.createElement("p");
+  email.classList.add("email");
+  email.textContent = "hello@shaan.com";
+  const address = document.createElement("p");
+  address.classList.add("address");
+  address.textContent = "Shaan Palace, Shaan Street, Pune, Mumbai, India";
+  callSection.appendChild(callUs);
+  callSection.appendChild(call);
+  emailSection.appendChild(emailUs);
+  emailSection.appendChild(email);
+  addressSection.appendChild(visitUs);
+  addressSection.appendChild(address);
+  contactContainer.appendChild(contactTitle);
+  contactContainer.appendChild(callSection);
+  contactContainer.appendChild(emailSection);
+  contactContainer.appendChild(addressSection);
+  const content = document.querySelector("#content");
+  content.appendChild(contactContainer);
+}
